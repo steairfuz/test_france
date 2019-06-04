@@ -120,7 +120,6 @@ class VilleInfo(object):
         else:
             return self.__creation_du_frmt_de_retour(self._ville, '--', '--', '--', '--')
 
-
     @staticmethod
     def get_tarif(nbre_dhabitant):
         prix = 0

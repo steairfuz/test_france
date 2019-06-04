@@ -25,8 +25,8 @@ class FormDevenement1(forms.Form):
     titre,description et date
     """
     titre_evenement = forms.CharField(label='Titre',
-                                       max_length=100,
-                                       widget=forms.TextInput(attrs={'placeholder': 'titre', 'autocomplete': 'off'}))
+                                      max_length=100,
+                                      widget=forms.TextInput(attrs={'placeholder': 'titre', 'autocomplete': 'off'}))
 
     descrip_evenement = forms.CharField(label="Description",
                                         widget=forms.Textarea(attrs={"rows": 5,
@@ -62,16 +62,10 @@ class HeureDerivee(forms.Form):
             nbre = 24
         elif heure_ou_minute == 'M':
             nbre = 60
-
         valeur_initiale = cls.get_une_partie_de_lheure(heure_ou_minute)
-
-
         return forms.CharField(label=_label,
                                widget=forms.Select(choices=liste_des_valeurs(nbre)),
                                initial=valeur_initiale)
-
-
-
 
 
 class FormDevenement2(forms.Form):
@@ -85,8 +79,9 @@ class FormDevenement2(forms.Form):
     heure_start1 = HeureDerivee.get_select_field('H', 'heure début')
     minut_start1 = HeureDerivee.get_select_field('M')
 
-    heure_start2 = HeureDerivee.get_select_field('H','heure fin')
+    heure_start2 = HeureDerivee.get_select_field('H', 'heure fin')
     minut_start2 = HeureDerivee.get_select_field('M')
+
 
 if __name__ == '__main__':
     pass
