@@ -28,7 +28,9 @@ aller dans le dossier de l'environnement virtuel puis l'activer via:
 #### 3. Pour le Test 2
 - il faut telecharger le Json de l'ID clients OAuth 2.0
 - renommer ce fichier en "client_secret_key.json"
-- le mettre dans le dossier "/test_france/mes_models"
+- le mettre dans le dossier "/test_france/mes_models/"
+- editer le fichier "/test_france/mes_models/mes_evenements.py":
+  - changer la variable de CALENDAR_ID  (Mettre l'ID de votre Google calendar) j'ai utilisé 'kokouvi.sewoavi@gmail.com'
 
 
 
