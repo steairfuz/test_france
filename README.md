@@ -19,11 +19,19 @@
 #### 3. Création du projet
 
 aller dans le dossier de l'environnement virtuel puis l'activer via: 
-.\proj_france_env\Scripts\activate.bat
+- .\proj_france_env\Scripts\activate.bat
 - créer un dossier  "test_project"
 - cloner: git clone https://github.com/steairfuz/test_france.git
 - aller dans le dossier cloner :  pip install -r requirements.txt
 - lancer le programme via: python manage.py runserver
+
+#### 3. Pour le Test 2
+- il faut telecharger le Json de l'ID clients OAuth 2.0
+- renommer ce fichier en "client_secret_key.json"
+- le mettre dans le dossier "/test_france/mes_models"
+
+
+
 
 
 
