@@ -1,18 +1,15 @@
-[![Try Django 2.2 tutorial](https://static.codingforentrepreneurs.com/media/projects/try-django-22/images/share/try_django_2_2_share.jpg)](https://www.codingforentrepreneurs.com/projects/try-django-22)
-
-
-### Getting Started
+### Commencer
 
 #### Pré requis
 - Python Python 3.7.3
-- Virtual Environment (pipenv or virtualenv)
+- Environnement virtuel (pipenv or virtualenv)
 
 
 #### 1. Systeme s'exploitation utilisé
 - Windows: 
 
 
-#### 2. Créer un environnement virtuel
+#### 2. Création d'un environnement virtuel
 - python -m venv proj_france_env
 
 
