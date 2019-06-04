@@ -12,7 +12,7 @@
 - Windows: 
 
 
-#### 2. Création d'un environnement virtuel et installé Django
+#### 2. Créer un environnement virtuel
 - python -m venv proj_france_env
 
 
@@ -22,7 +22,7 @@ aller dans le dossier de l'environnement virtuel puis l'activer via:
 - .\proj_france_env\Scripts\activate.bat
 - créer un dossier  "test_project" (n'importe où, l'essentiel est d'activer l'environnement virtuel)
 - cloner: git clone https://github.com/steairfuz/test_france.git
-- aller dans le dossier cloner puis faire:  pip install -r requirements.txt
+- aller dans le dossier cloner puis faire:  pip install -r requirements.txt (installation des dépendances)
 
 
 #### 3. Pour le Test 2 (intégrer un évènement dans google calendar)
