@@ -86,6 +86,7 @@ def ajout_dun_evenement(_titre, _description, _date, _heure_debut, _heure_fin):
     except Exception as E:
         return False, str(E)
 
+
 if __name__ == '__main__':
     ajout_dun_evenement('Test kokouvi', 'test', [2019, 6, 4], [15, 0], [16, 0])
 

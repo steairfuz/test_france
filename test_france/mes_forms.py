@@ -29,9 +29,9 @@ class FormDevenement1(forms.Form):
                                        widget=forms.TextInput(attrs={'placeholder': 'titre', 'autocomplete': 'off'}))
 
     descrip_evenement = forms.CharField(label="Description",
-                                        widget=forms.Textarea(attrs={"rows":5,
-                                                                     "cols":50,
-                                                                     'class':'form-control'}))
+                                        widget=forms.Textarea(attrs={"rows": 5,
+                                                                     "cols": 50,
+                                                                     'class': 'form-control'}))
     # Champ evenement
     date_evenement = forms.DateField(label="Date",
                                      widget=forms.SelectDateWidget(years=[x for x in range(2000, 3000)],
@@ -52,7 +52,7 @@ class HeureDerivee(forms.Form):
         return int(datetime.datetime.now().time().strftime('%' + ou))
 
     @classmethod
-    def get_select_field(cls, heure_ou_minute, _label='' ):
+    def get_select_field(cls, heure_ou_minute, _label=''):
 
         def liste_des_valeurs(nbre):
             return ((str(x), ('0' if len(str(x)) == 1 else '') + str(x)) for x in range(nbre))
@@ -89,7 +89,5 @@ class FormDevenement2(forms.Form):
     minut_start2 = HeureDerivee.get_select_field('M')
 
 if __name__ == '__main__':
-    print(datetime.datetime.now().time().strftime('%M'))
-
-
+    pass
 

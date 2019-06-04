@@ -118,7 +118,7 @@ class VilleInfo(object):
                 return self.__creation_du_frmt_de_retour(self._ville, '--', '--', '--', '--')
 
         else:
-            return self.__creation_du_frmt_de_retour(self._ville, '--','--','--','--')
+            return self.__creation_du_frmt_de_retour(self._ville, '--', '--', '--', '--')
 
 
     @staticmethod
@@ -141,10 +141,4 @@ class VilleInfo(object):
 
 
 if __name__ == '__main__':
-    import datetime
-
-
-
-
-    '2019-06-03T09:00:00-07:00'
-
+    pass
