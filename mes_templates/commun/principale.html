@@ -1,0 +1,35 @@
+{% extends "commun/standart.html" %}
+{% block corps %}
+ <div class="container-fluid">
+     <h2> Test 1 codage module Python 3 :</h2>
+
+<p>Développer un module qui permettra à l’utilisateur de saisir ça ville sur un premier écran.
+Pour cela on utilisera l’auto-complétion afin d’éviter tout type de saisir erroné, puis pour améliorer la performance on se connectera à un API open source des villes de France.
+
+Sur la deuxième page on affiche les données suivantes : la ville , le tarifs, la longitude et la latitude de la ville ainsi que le nombre d’habitants ;
+</p>
+
+     <ul class=" ">
+         <li> Habitant inférieur à 1000 le prix est de 5€ </li>
+         <li> Habitant entre 1000 à 9000 le prix est de 10€</li>
+         <li> Habitant entre 9000 à 30 000 le prix est de 30€</li>
+         <li> Habitant supérieur à 30 000 le prix est de 50€</li>
+     </ul>
+
+<h2> Test 2 codage module Python 3 : </h2>
+
+<p>
+Développer un module qui permettra à l’utilisateur de référencer un événement avec les paramètres suivants : date de l’événement,  heure de début ,  heure de fin, titre et la description de l’événement.
+Après validation l’ensemble des informations sont affichées directement à notre google calendar,
+</p>
+
+<ul>
+    <li> Respecter les conventions de nommage</li>
+    <li> commenter l’ensemble du code</li>
+    <li> Le code sera installer via la commande $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY </li>
+</ul>
+
+
+ </div>
+{% endblock %}
+

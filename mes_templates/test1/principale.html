@@ -1,0 +1,26 @@
+{% extends "commun/standart.html" %}
+{% block corps %}
+    <div class="navbar">
+      <form class="form-inline my-2 my-lg-0" action='info/' method="post">
+          {% csrf_token %}
+          {{ rech_champ.parm_ville }}
+          {% include "commun/bouton_valider.html" with label="valider" %}
+      </form>
+    </div>
+
+
+{% endblock %}
+
+
+{% load static %}
+{% block javascriptpourlautocomplement %}
+<script src="{% static "js/jquery-ui.min.js" %}" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function() {
+    $("#id_rech_ville").autocomplete({
+    source: "/rech_test/",
+    minLength: 1,
+    });
+    });
+</script>
+{% endblock %}

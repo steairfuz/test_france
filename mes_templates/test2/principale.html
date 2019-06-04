@@ -1,0 +1,37 @@
+{% extends "commun/standart.html" %}
+{% block corps %}
+<form action={{ pointe_sur }} method="post" class="form form-group">
+    {% csrf_token %}
+    <div class="navbar">
+        <table class="table border">
+            <thead class="">
+            <td colspan="2">
+                <b>{{titre}}</b>
+            </td>
+            </thead>
+
+        {% for x in notre_form %}
+                <tr>
+                    <td> {{ x.label.upper }}  </td>
+                    <td> {{ x }} </td>
+                </tr>
+        {% endfor %}
+
+
+            <tr>
+                <td> {{ heure_form.heure_start1.label.upper }} </td>
+                <td> {{ heure_form.heure_start1 }} {{ heure_form.minut_start1 }}</td>
+            </tr>
+            <tr>
+                <td> {{ heure_form.heure_start2.label.upper }} </td>
+                <td> {{ heure_form.heure_start2 }} {{ heure_form.minut_start2 }}</td>
+            </tr>
+
+        </table>
+
+            {% include "commun/bouton_valider.html" with label="Enregistrer" %}
+     </div>
+</form>
+    {% block information_apres_validation %}
+    {% endblock %}
+{% endblock %}

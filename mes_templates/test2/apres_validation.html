@@ -1,0 +1,12 @@
+{% extends "test2/principale.html" %}
+
+{% block information_apres_validation %}
+<div class=" text-black-50 {%if bon %}  alert-success {%else%}  alert-danger  {%endif%}">
+    <label>{%if bon %} Evenement enregistré avec succes {%else%}  L'enregistrement n'a pu aboutir, réessayer {%endif%}</label>
+    {%if bon %}
+       <a href="{{autres_info}}" class="page-link"  target="_blank"> {{autres_info}} </a>
+    {%else%}
+        <label> {{autres_info}}</label>
+    {%endif%}
+</div>
+{% endblock %}

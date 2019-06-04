@@ -1,0 +1,24 @@
+{% extends "commun/standart.html" %}
+{% block corps %}
+<!--<h1> {{ uneville.get_api_data  }}</h1>-->
+
+
+{{ tmp }}
+<div class='col-12 col-md-10 mb-3 mx-auto'>
+ <div class='card text-dark alert-dark'>
+     <h5 >{{ uneville.get_ville.upper }}</h5>
+ </div>
+       <table class="table table-bordered">
+       {% for cle, valeur in uneville.get_info.items %}
+           {% if cle not in uneville.get_not_show_key %}
+           <tr>
+           <td class="tab-pane">{{cle.upper}}</td>
+           <td class=" text-warning text-black-50">{{ valeur}}</td>
+           </tr>
+           {% endif %}
+       {% endfor %}
+       </table>
+</div>
+
+
+{% endblock %}
