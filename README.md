@@ -22,10 +22,10 @@ aller dans le dossier de l'environnement virtuel puis l'activer via:
 - .\proj_france_env\Scripts\activate.bat
 - créer un dossier  "test_project" (n'importe où, l'essentiel est d'activer l'environnement virtuel)
 - cloner: git clone https://github.com/steairfuz/test_france.git
-- aller dans le dossier cloner :  pip install -r requirements.txt
+- aller dans le dossier cloner puis faire:  pip install -r requirements.txt
 
 
-#### 3. Pour le Test 2
+#### 3. Pour le Test 2 (intégrer dans google calendar)
 - il faut telecharger le Json de l'ID clients OAuth 2.0 de votre API google Calendar
 - renommer ce fichier en "client_secret_key.json"
 - le mettre dans le dossier "/test_france/mes_models/"
