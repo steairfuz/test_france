@@ -113,8 +113,8 @@ class VilleInfo(object):
             if trouver:
                 trouver = trouver[0]
                 return self.__creation_du_frmt_de_retour(_ville=trouver['value'],
-                                                         _lat=trouver['latitude'],
-                                                         _long=trouver['longitude'],
+                                                         _lat=str(trouver['latitude']).replace(',', '.'),
+                                                         _long=str(trouver['longitude']).replace(',', '.'),
                                                          _hbt=trouver['population'],
                                                          _tarif=self.get_tarif(trouver['population']))
             else:
