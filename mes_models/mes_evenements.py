@@ -23,7 +23,7 @@ def deco_pour_la_compilation(fn):
     return couverture
 
 
-# connexion via le console (pour certains test)
+# connexion via la console (pour certains test)
 @deco_pour_la_compilation
 def autorisation_console(chemin_du_fichier):
     flow = InstalledAppFlow.from_client_secrets_file(chemin_du_fichier, SCOPES)
