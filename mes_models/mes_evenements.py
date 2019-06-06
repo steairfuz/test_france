@@ -88,5 +88,10 @@ def ajout_dun_evenement(_titre, _description, _date, _heure_debut, _heure_fin):
 
 
 if __name__ == '__main__':
-    ajout_dun_evenement('Test kokouvi', 'test', [2019, 6, 4], [15, 0], [16, 0])
+    ajout_dun_evenement('Test kokouvi', 'test',
+                        [datetime.datetime.today().year,
+                         datetime.datetime.today().month,
+                         datetime.datetime.today().day],
+                        [datetime.datetime.today().hour, datetime.datetime.today().minute],
+                        [datetime.datetime.today().hour+1, datetime.datetime.today().minute])
 
