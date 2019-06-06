@@ -13,7 +13,7 @@ CALENDAR_ID = 'kokouvi.sewoavi@gmail.com'
 TIME_ZONE = 'Europe/Paris'
 API_SERVICE_NAME = 'calendar'
 API_VERSION = 'v3'
-NOM_DU_FIC_AUTISATION = 'lecredit_en_fichier.json'
+# NOM_DU_FIC_AUTISATION = 'lecredit_en_fichier.json'
 
 
 # le building de la connexion est effectuée dans cet décorateur
