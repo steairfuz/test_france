@@ -93,6 +93,7 @@ class VilleInfo(object):
         self._ville = str(laville).strip()
         self._dictionnaire = ledictionnaire
 
+    # création du format qui sera utilisé dans le template
     @staticmethod
     def __creation_du_frmt_de_retour(_ville, _tarif, _long, _lat, _hbt):
         return {'ville': _ville,
@@ -101,9 +102,11 @@ class VilleInfo(object):
                 'Latitude': _lat,
                 'habitant': _hbt}
 
+    # retourne la ville saisie par l'utilisateur
     def get_ville(self):
         return self._ville
 
+    # recherche les informations supplémentaire d'une ville (longitude, latitude, population )
     def get_info(self):
         if self._dictionnaire is not None:
             trouver = [x for x in self._dictionnaire if str(x['value']).lower() == str(self._ville).lower()]
@@ -120,6 +123,7 @@ class VilleInfo(object):
         else:
             return self.__creation_du_frmt_de_retour(self._ville, '--', '--', '--', '--')
 
+    # donne le prix en fonction du nombre d'habitant
     @staticmethod
     def get_tarif(nbre_dhabitant):
         prix = 0
@@ -134,6 +138,7 @@ class VilleInfo(object):
 
         return str(prix)+' €'
 
+    # appelé dans le template pour isoler certaine clé du dictionnaire (on ne veut pas les afficher)
     @staticmethod
     def get_not_show_key():
         return ['ville']

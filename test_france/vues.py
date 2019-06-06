@@ -37,7 +37,7 @@ def test2(la_requete, lien='validation-evenement/', chemin=__common_doc(2), bon=
                                        'autres_info': autres_info})
 
 
-# cette nous permet d'afficher les info sur une ville (test1)
+# cette fonction nous permet d'afficher les info sur une ville (test1)
 def info_sur_une_ville(la_requete):
     if 'parm_ville' in la_requete.POST:
         maville = VilleInfo(la_requete.POST['parm_ville'], je_garde.get_liste())
