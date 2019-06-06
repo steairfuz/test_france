@@ -67,8 +67,8 @@ class VillesSimilaires(object):
                     mes_villes.append({'id': myid,
                                        'value': value['nom'],
                                        'population': value['population'],
-                                       'longitude': value['centre']['coordinates'][0],
-                                       'latitude': value['centre']['coordinates'][1]})
+                                       'latitude': value['centre']['coordinates'][1],
+                                       'longitude': value['centre']['coordinates'][0],})
                 # cet objet a été crée lors du chargement de ce fichier
                 # enregistrement du dictionnaire des villes
                 je_garde.set_last_list(mes_villes)
@@ -98,8 +98,8 @@ class VilleInfo(object):
     def __creation_du_frmt_de_retour(_ville, _tarif, _long, _lat, _hbt):
         return {'ville': _ville,
                 'tarif': _tarif,
-                'longitude': _long,
                 'Latitude': _lat,
+                'longitude': _long,
                 'habitant': _hbt}
 
     # retourne la ville saisie par l'utilisateur
