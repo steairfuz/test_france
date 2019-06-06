@@ -68,7 +68,7 @@ class VillesSimilaires(object):
                                        'value': value['nom'],
                                        'population': value['population'],
                                        'latitude': value['centre']['coordinates'][1],
-                                       'longitude': value['centre']['coordinates'][0],})
+                                       'longitude': value['centre']['coordinates'][0]})
                 # cet objet a été crée lors du chargement de ce fichier
                 # enregistrement du dictionnaire des villes
                 je_garde.set_last_list(mes_villes)
