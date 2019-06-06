@@ -38,7 +38,7 @@ def autorisation_direct(chemin_du_fichier):
     credential_path = path.join(path.dirname(path.abspath(__file__)), 'le_token.json')
     store = Storage(credential_path)
     credentials = store.get()
-    # en gros s'il n ya pas le fichier d'autirisation tente de le récupérer et de l'enregistrer
+    # en gros s'il n ya pas le fichier d'autirisation,on tente de le récupérer et de l'enregistrer
     if not credentials:
         flow = client.flow_from_clientsecrets(chemin_du_fichier, SCOPES)
         credentials = tools.run_flow(flow, store)
@@ -88,7 +88,7 @@ def ajout_dun_evenement(_titre, _description, _date, _heure_debut, _heure_fin):
 
 
 if __name__ == '__main__':
-    ajout_dun_evenement('Test kokouvi', 'test',
+    ajout_dun_evenement('Test kokouvi (initialisation)', 'test',
                         [datetime.datetime.today().year,
                          datetime.datetime.today().month,
                          datetime.datetime.today().day],
