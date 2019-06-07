@@ -38,8 +38,8 @@ def autorisation_direct(chemin_du_fichier):
     credential_path = path.join(path.dirname(path.abspath(__file__)), 'le_token.json')
     store = Storage(credential_path)
     credentials = store.get()
-    # en gros s'il n ya pas le fichier d'autirisation,on tente de le récupérer et de l'enregistrer
-    if not credentials:
+    # en gros s'il n ya pas le fichier d'autirisation(le token),on tente de le récupérer et de l'enregistrer
+    if not credentials or credentials.invalid:
         flow = client.flow_from_clientsecrets(chemin_du_fichier, SCOPES)
         credentials = tools.run_flow(flow, store)
     return credentials

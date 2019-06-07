@@ -32,6 +32,9 @@ aller dans le dossier de l'environnement virtuel puis l'activer via:
 - Exécuter: python .\mes_models\mes_evenements.py (il faut noter que je suis sur le système Windows)
   le navigateur se lance , on se connete et on a le message "Authentication successful."
 
+    - l'execution a pour but de créer le token puisque souvent il y a un problème de création de fichier
+    directement dans Django, ce qui nous pousse à executer manuelement cette commande.
+
 #### 4. Lancement du projet
 - se positionner dans le projet cloné et lancer: python manage.py runserver
 - aller sur http://127.0.0.1:8000
